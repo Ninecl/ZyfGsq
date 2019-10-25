@@ -18,14 +18,14 @@
     
     <!-- CSS
   ================================================== -->
-  	<link rel="stylesheet" href="{{ static_url("css/zerogrid.css") }}">
-	<link rel="stylesheet" href="{{ static_url("css/style.css") }}">
-	<link href="{{ static_url("css/mb-comingsoon-iceberg.css") }}" rel="stylesheet" />
+  	<link rel="stylesheet" href='{{ static_url("css/zerogrid.css") }}'>
+	<link rel="stylesheet" href='{{ static_url("css/style.css") }}'>
+	<link href='{{ static_url("css/mb-comingsoon-iceberg.css") }}' rel="stylesheet" />
 	
 	<!-- Custom Fonts -->
-	<link href="{{ static_url("css/font-awesome.min.css") }}" rel="stylesheet" type="text/css">
+	<link href='{{ static_url("css/font-awesome.min.css") }}' rel="stylesheet" type="text/css">
 	
-	<script src="{{ static_url("js/jquery-The Wedding Event2.1.1.js") }}"></script>
+	<script src='{{ static_url("js/jquery-The Wedding Event2.1.1.js") }}'></script>
 
 	<!--[if lt IE 8]>
        <div style=' clear: both; text-align:center; position: relative;'>
@@ -218,7 +218,7 @@
 										</div>
 									</div>
 								</div>
-								<img src="{{ static_url("pics/gallery_6.jpg") }}" />
+								<img src='{{ static_url("pics/gallery_6.jpg") }}' />
 							</div>
 						</div>
 					</div>
@@ -269,9 +269,10 @@
 			<div class="zerogrid">
 				<div class="row wrap-box"><!--Start Box-->
 					<h3>为什么会有这个网站<br><span>(当然首先因为zyf是一个程序员)</span></h3> 
-					<img src="images/story.jpg" />
-					<p>This is the story of my proposal. I got down on one knee, knees shaking, voice trembling and said: “Will you marry me, please?”. She started loughig, then crying. Then she replied: “Of course, I will!”</p>
-					<p>A waft of wind came sweeping down the laurel-walk, and trembled through the boughs of the chestnut: it wandered away–away–to an indefinite distance–it died.A waft of wind came sweeping down the laurel-walk, and trembled through the boughs of the chestnut: it wandered away–away–to an indefinite distance–it died.A waft of wind came sweeping down the laurel-walk, and trembled through the boughs of the chestnut: it wandered away–away–to an indefinite distance–it died.A waft of wind came sweeping down the laurel-walk, and trembled through the boughs of the chestnut: it wandered away–away–to an indefinite distance–it died.</p>
+					<img src='{{ static_url("pics/why.jpg") }}' />
+					<p>“zyf，你给我去注册一个微博小号！”<br>“？？？弄啥咧”<br>“我的微博要保持人设的呀，我要去小号上秀恩爱！”<br>“你怕不是脑阔子有包包。。。”</p>
+					<br>
+					<p>于是这个大胆的想法在zyf脑海中诞生了，作为一名有理想有追求有报复的程序员<br>年轻人，你渴望力量吗<br>让我来教教你用python、javascript、html、tornado速成一个网站吧！</p>
 				</div>
 			</div>
 		</section>
@@ -291,12 +292,23 @@
 						<div class="col-1-3">
 							<div class="wrap-col item">
 								<div class="zoom-container">
-									<img src="images/kids4-thumb.jpg" />
+									<img src='{{ static_url("blogs/blog1/front.jpg") }}' />
 								</div>
 								<div class="item-content">
-									<span>LOREM IPSUM DOLOR SIT AMET,CONSEC TEETUER ADIPECPP IT.</span>
-									<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix. 
-									Et vel quod legimus, graeci electram ocurreret at his. Vix at tation facete impetus omnesque ius harum antiopam.</p>
+									<span>关于要吃的东西</span>
+									<p>想吃的东西太多了<br>gsq永远是zyf<br>练腹肌路上的拦路虎</p>
+									<a class="button" onclick="window.open('blog_1','_self')">More</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-1-3">
+							<div class="wrap-col item">
+								<div class="zoom-container">
+									<img src='{{ static_url("blogs/blog2/front.jpg") }}' />
+								</div>
+								<div class="item-content">
+									<span>关于要做的事</span>
+									<p>当然还有做过的事<br>还有gsq不让zyf做的事<br>还有gsq逼zyf做的事</p>
 									<a class="button" href="single.html">More</a>
 								</div>
 							</div>
@@ -304,25 +316,11 @@
 						<div class="col-1-3">
 							<div class="wrap-col item">
 								<div class="zoom-container">
-									<img src="images/kids3-thumb.jpg" />
+									<img src='{{ static_url("blogs/blog3/front.jpg") }}' />
 								</div>
 								<div class="item-content">
-									<span>LOREM IPSUM DOLOR SIT AMET,CONSEC TEETUER ADIPECPP IT.</span>
-									<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix. 
-									Et vel quod legimus, graeci electram ocurreret at his. Vix at tation facete impetus omnesque ius harum antiopam.</p>
-									<a class="button" href="single.html">More</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-1-3">
-							<div class="wrap-col item">
-								<div class="zoom-container">
-									<img src="images/kids2-thumb.jpg" />
-								</div>
-								<div class="item-content">
-									<span>LOREM IPSUM DOLOR SIT AMET,CONSEC TEETUER ADIPECPP IT.</span>
-									<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix. 
-									Et vel quod legimus, graeci electram ocurreret at his. Vix at tation facete impetus omnesque ius harum antiopam.</p>
+									<span>关于求生欲</span>
+									<p>如果gsq是阅读理解题<br>那么zyf一定道道零分<br>但是zyf仍然一题不落</p>
 									<a class="button" href="single.html">More</a>
 								</div>
 							</div>
@@ -332,7 +330,7 @@
 						<div class="col-1-3">
 							<div class="wrap-col item">
 								<div class="zoom-container">
-									<img src="images/kids3-thumb.jpg" />
+									<img src="images/kids3-thumb.jpg" />wode
 								</div>
 								<div class="item-content">
 									<span>LOREM IPSUM DOLOR SIT AMET,CONSEC TEETUER ADIPECPP IT.</span>
