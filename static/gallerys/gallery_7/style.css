@@ -4,7 +4,8 @@
 }
 
 body{
-	background:url(./bg.jpg);
+	overflow: hidden;
+	background:url(./bg.jpg) repeat;
 }
 
 ul{
@@ -13,8 +14,8 @@ ul{
 
 .container{
 	background:rgb(95, 95, 67);
-	width:610px;
-	height:410px;
+	width:600px;
+	height:450px;
 	margin:170px auto 0;
 	cursor:pointer;
 	overflow:hidden;
@@ -25,8 +26,8 @@ ul{
 	background:rgb(70, 51, 51);
 	display:block;
 	width:600px;
-	height:400px;
-	padding:5px;
+	height:450px;
+	padding:0px;
 	float:left;	
 	-webkit-transition:0.7s;
 	-moz-transition:0.7s;
