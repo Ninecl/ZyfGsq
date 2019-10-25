@@ -1,0 +1,67 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background:url(./bg.jpg);
+}
+
+ul{
+	list-style:none;
+}
+
+.container{
+	background:rgb(95, 95, 67);
+	width:610px;
+	height:410px;
+	margin:170px auto 0;
+	cursor:pointer;
+	overflow:hidden;
+	box-shadow:6px 4px 5px #969696;
+}
+
+.container img{
+	background:rgb(70, 51, 51);
+	display:block;
+	width:600px;
+	height:400px;
+	padding:5px;
+	float:left;	
+	-webkit-transition:0.7s;
+	-moz-transition:0.7s;
+	-o-transition:0.7s;
+}
+
+.zoom{
+	position:absolute;
+	-moz-transform:translate(-150px,-120px);
+	-webkit-transform:scale(1.1) translate(-150px,-120px) skew(15deg,-30deg);
+	-ms-transform:scale(1.1) translate(-150px,-120px) skew(15deg,-30deg);
+	-o-transform:scale(1.1) translate(-150px,-120px) skew(15deg,-30deg);
+}
+
+
+
+.name{
+	background:#FFF;
+	width:220px;
+	height:30px;
+	margin:15px auto;
+	cursor:pointer;
+	box-shadow:2px 2px 5px #969696;/*opera或ie9*/ 
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border-radius:20px;
+}
+
+.name p{
+	font:bold 24px Verdana, Geneva, sans-serif;
+	text-align:center;
+	line-height:30px;
+	color:#FFF;
+	background:#333;
+	-webkit-border-radius:20px;
+	-moz-border-radius:20px;
+	border-radius:20px;
+}

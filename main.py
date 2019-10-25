@@ -24,13 +24,25 @@ class gallery_5(tornado.web.RequestHandler):
         self.render('gallery_5.html')
 
 
+class gallery_7(tornado.web.RequestHandler):
+    def get(self):
+        self.render('gallery_7.html')
+
+
+class gallery_9(tornado.web.RequestHandler):
+    def get(self):
+        self.render('gallery_9.html')
+
+
 class Application(tornado.web.Application):
     def __init__(self):
         handlers = [
             (r'/', HomepageHandler),
             (r'/gallery_1', gallery_1),
             (r'/gallery_2', gallery_2),
-            (r'/gallery_5', gallery_5)
+            (r'/gallery_5', gallery_5),
+            (r'/gallery_7', gallery_7),
+            (r'/gallery_9', gallery_9)
         ]
         settings = {
             'template_path': 'templates',

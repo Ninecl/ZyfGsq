@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Disney
+		</title>
+		<link rel="stylesheet" href='{{ static_url("gallerys/gallery_9/jquery.hislide.css") }}' />
+	</head>
+<body>
+		<div class="slide hi-slide">
+		  <div class="hi-prev "></div>
+			<div class="hi-next "></div>
+			<ul>
+				<li><img src='{{ static_url("gallerys/gallery_9/1.jpg") }}' /></li>
+				<li><img src='{{ static_url("gallerys/gallery_9/2.jpg") }}' /></li>
+				<li><img src='{{ static_url("gallerys/gallery_9/3.jpg") }}' /></li>
+				<li><img src='{{ static_url("gallerys/gallery_9/4.jpg") }}' /></li>
+				<li><img src='{{ static_url("gallerys/gallery_9/5.jpg") }}' /></li>
+				<li><img src='{{ static_url("gallerys/gallery_9/6.jpg") }}' /></li>
+				<li><img src='{{ static_url("gallerys/gallery_9/7.jpg") }}' /></li>
+			</ul>
+		</div>
+		
+		
+		
+	<script src='{{ static_url("gallerys/gallery_9/jquery.min.js") }}'></script>
+		<script type="text/javascript" src='{{ static_url("gallerys/gallery_9/jquery.hislide.js") }}' ></script>
+		<script>
+			$('.slide').hiSlide();
+		</script>
+	</body>
+   
+</html>
