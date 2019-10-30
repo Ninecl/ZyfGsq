@@ -197,6 +197,7 @@ a.button.bt2 {background: #0000ff;color: #ffffff;}
 	display: block;
 	width: 100%;
 	height: auto;
+	border:2px solid rgb(226, 198, 198);
 }
 .item-container .item-caption {
 	position: absolute;
