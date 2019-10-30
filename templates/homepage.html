@@ -143,7 +143,7 @@
 						<div class="wrapper">
 							<h2 class="color-yellow">GALLERY</h2>
 							<hr class="line">
-							<div class="intro">害 拍照真的真的真的太难了</div>
+							<div class="intro">害 拍照真的真的真的太难了<br>照片可以点开哦</div>
 						</div>
 					</div>
 					<div class="row">
@@ -171,7 +171,7 @@
 								<img src='{{ static_url("pics/gallery_2.jpg") }}' />
 							</div>
 						</div>
-						<div class="col-1-3">
+						<div class="col-1-3" onclick="gallery_3_alert()">
 							<div class="item-container">
 								<div class="item-caption">
 									<div class="item-caption-inner">
@@ -185,7 +185,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-1-3">
+						<div class="col-1-3" onclick="gallery_4_alert()">
 							<div class="item-container">
 								<div class="item-caption">
 									<div class="item-caption-inner">
@@ -209,7 +209,7 @@
 								<img src='{{ static_url("pics/gallery_5.jpg") }}' />
 							</div>
 						</div>
-						<div class="col-1-3">
+						<div class="col-1-3" onclick="gallery_6_alert()">
 							<div class="item-container">
 								<div class="item-caption">
 									<div class="item-caption-inner">
@@ -235,7 +235,7 @@
 								<img src='{{ static_url("pics/gallery_7.jpg") }}' />
 							</div>
 						</div>
-						<div class="col-1-3">
+						<div class="col-1-3" onclick="gallery_8_alert()">
 							<div class="item-container">
 								<div class="item-caption">
 									<div class="item-caption-inner">
@@ -633,6 +633,27 @@
 		console.log(day, hours, minutes, seconds)
 	}
 	window.onload = startCount()
+</script>
+<script type="text/javascript">
+	function gallery_3_alert()
+	{
+		alert("做一个网页很累的好吗！你还想每个都能点啊？？？点下一个吧！");
+	}
+
+	function gallery_4_alert()
+	{
+		alert("这是我女朋友，你点啥点？？？你点了想干啥？？？点下一个！");
+	}
+
+	function gallery_6_alert()
+	{
+		alert("哥？？？我一大老爷们你也点？？？不搞了不搞了，下一个真能点。");
+	}
+
+	function gallery_8_alert()
+	{
+		alert("你倒是猜猜最后一个能不能点嘿嘿嘿");
+	}
 </script>
 </body>
 </html>
