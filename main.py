@@ -9,6 +9,11 @@ class HomepageHandler(tornado.web.RequestHandler):
         self.render('homepage.html')
 
 
+class StoryHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render('story.html')
+
+
 class gallery_1(tornado.web.RequestHandler):
     def get(self):
         self.render('gallery_1.html')
@@ -38,6 +43,7 @@ class Application(tornado.web.Application):
     def __init__(self):
         handlers = [
             (r'/', HomepageHandler),
+            (r'/story', StoryHandler),
             (r'/gallery_1', gallery_1),
             (r'/gallery_2', gallery_2),
             (r'/gallery_5', gallery_5),
@@ -46,10 +52,10 @@ class Application(tornado.web.Application):
         ]
         settings = {
             'template_path': 'templates',
-            'static_path': 'static'
+            'static_path': 'static',
+            'debug': True
         }
-        debug = True
-        tornado.web.Application.__init__(self, handlers, debug, **settings)
+        tornado.web.Application.__init__(self, handlers, **settings)
 
 
 if __name__ == '__main__':

@@ -1,656 +1,720 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<head>
-
-    <!-- Basic Page Needs
-  ================================================== -->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
 	<meta charset="utf-8">
-	<title>ZyfGsq</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-	
-    <!-- Mobile Specific Metas
-  ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    <!-- CSS
-  ================================================== -->
-  	<link rel="stylesheet" href='{{ static_url("css/zerogrid.css") }}'>
-	<link rel="stylesheet" href='{{ static_url("css/style.css") }}'>
-	<link href='{{ static_url("css/mb-comingsoon-iceberg.css") }}' rel="stylesheet" />
-	
-	<!-- Custom Fonts -->
-	<link href='{{ static_url("css/font-awesome.min.css") }}' rel="stylesheet" type="text/css">
-	
-	<script src='{{ static_url("js/jquery-The Wedding Event2.1.1.js") }}'></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ZYF&GSQ</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
 
-	<!--[if lt IE 8]>
-       <div style=' clear: both; text-align:center; position: relative;'>
-         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-        </a>
-      </div>
-    <![endif]-->
-    <!--[if lt IE 9]>
-		<script src="js/html5.js"></script>
-		<script src="js/css3-mediaqueries.js"></script>
+  
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href='{{ static_url("homepage/css/animate.css") }}'>
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href='{{ static_url("homepage/css/icomoon.css") }}'>
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href='{{ static_url("homepage/css/bootstrap.css") }}'>
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href='{{ static_url("homepage/css/magnific-popup.css") }}'>
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href='{{ static_url("homepage/css/owl.carousel.min.css") }}'>
+	<link rel="stylesheet" href='{{ static_url("homepage/css/owl.theme.default.min.css") }}'>
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href='{{ static_url("homepage/css/style.css") }}'>
+
+	<!-- Modernizr JS -->
+	<script src='{{ static_url("homepage/js/modernizr-2.6.2.min.js") }}'></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
 	<![endif]-->
-    
-</head>
-<body>
-<div class="wrap-body">
 
-<!--////////////////////////////////////Header-->
-<header >
-	<div class="wrap-header">
-		<div class="main-header">
-			<div class="zerogrid">
-				<h1>Happy Birthday</h1>
-				<div class="counter">
-					<div class="centered text-center" id="myCounter">   
-						<div class="counter-group" id="myCounter">       
-							<div class="counter-block">
-								<div class="days">         
-									<div class="counter days">      
-										<div class="days number show hundreds" id="days_1"> </div>           
-										<div class="days number show tens" id="days_2"> </div>              
-										<div class="days number show units" id="days_3"> </div>  
-									</div>                 
-								</div>           
-								<div class="counter-caption">days</div>       
-							</div>       
-							<div class="counter-block">           
-								<div class="counter hours">               
-									<div class="number show n1 tens" id="hours_1"> </div>               
-									<div class="number show n1 units" id="hours_2"> </div>       
-								</div>           
-								<div class="counter-caption">hours</div>       
-							</div>       
-							<div class="counter-block">           
-								<div class="counter minutes">               
-									<div class="number show n1 tens" id="minutes_1"> </div>               
-									<div class="number show n1 units" id="minutes_2"> </div>         
-								</div>           
-								<div class="counter-caption">minutes</div>       
-							</div>       
-							<div class="counter-block">           
-								<div class="counter seconds">               
-									<div class="number show n1 tens" id="seconds_1"> </div>               
-									<div class="number show n1 units" id="seconds_2"> </div>                      
-								</div>           
-								<div class="counter-caption">seconds</div>       
-							</div>   
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
 	
-</header>
-
-
-
-<!--////////////////////////////////////Container-->
-<section id="container">
-	<div class="wrap-container">
-		<!-----------------content-box-1-------------------->
-		<section class="content-box boxstyle-1 box-1">
-			<div class="zerogrid">
-				<div class="row wrap-box"><!--Start Box-->
-					<div class="col-1-2">
-						<div class="col-3-5">
-							<div class="wrap-col">
-								<h1>计算机学院 <br>一男的</h1>
-								<p>顾思琦吃早饭了吗?你为什么又不吃早饭?</p>
-								<p>顾思琦吃午饭了吗?你为什么午饭又吃乱起八糟的东西?</p>
-								<p>顾思琦吃晚饭了吗?晚饭吃那么多肚子不是又要不舒服?</p>
-							</div>
-						</div>
-						<div class="col-2-5">
-							<div class="wrap-col">
-								<img src='{{ static_url("pics/zyf_touxiang.jpg") }}'>
-							</div>
-						</div>
-					</div>
-					<div class="col-1-2">
-						<div class="col-3-5 fix-right">
-							<div class="wrap-col">
-								<h1>东吴商学院 <br>一女的</h1>
-								<p>张钰峰我没吃早饭...能不能给我点水果呀~</p>
-								<p>张钰峰我的午饭一点也不好吃,我想去买点零食捏~</p>
-								<p>张钰峰我晚饭又吃了好多呜呜呜我好撑肚子里好难受...</p>
-							</div>
-						</div>
-						<div class="col-2-5">
-							<div class="wrap-col">
-								<img src='{{ static_url("pics/gsq_touxiang.jpg") }}'>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-----------------content-box-2-------------------->
-		<section class="content-box boxstyle-2 box-2">
-			<div class="zerogrid" style="width: 80%;">
-				<div class="row wrap-box"><!--Start Box-->
-					<div class="header">
-						<div class="wrapper">
-							<h2 class="color-yellow">GALLERY</h2>
-							<hr class="line">
-							<div class="intro">害 拍照真的真的真的太难了<br>照片可以点开哦</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-1-3" onclick="window.open('gallery_1','_self')">
-							<div class="item-container">
-								<div class="item-caption">
-									<div class="item-caption-inner">
-										<div class="item-caption-inner1">
-											
-										</div>
-									</div>
-								</div>
-								<img src='{{ static_url("pics/gallery_1.jpg") }}' />
-							</div>
-						</div>
-						<div class="col-1-3" onclick="window.open('gallery_2','_self')">
-							<div class="item-container">
-								<div class="item-caption">
-									<div class="item-caption-inner">
-										<div class="item-caption-inner1">
-											
-										</div>
-									</div>
-								</div>
-								<img src='{{ static_url("pics/gallery_2.jpg") }}' />
-							</div>
-						</div>
-						<div class="col-1-3" onclick="gallery_3_alert()">
-							<div class="item-container">
-								<div class="item-caption">
-									<div class="item-caption-inner">
-										<div class="item-caption-inner1">
-											
-										</div>
-									</div>
-								</div>
-								<img src='{{ static_url("pics/gallery_3.jpg") }}' />
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-1-3" onclick="gallery_4_alert()">
-							<div class="item-container">
-								<div class="item-caption">
-									<div class="item-caption-inner">
-										<div class="item-caption-inner1">
-											
-										</div>
-									</div>
-								</div>
-								<img src='{{ static_url("pics/gallery_4.jpg") }}' />
-							</div>
-						</div>
-						<div class="col-1-3" onclick="window.open('gallery_5','_self')">
-							<div class="item-container">
-								<div class="item-caption">
-									<div class="item-caption-inner">
-										<div class="item-caption-inner1">
-											
-										</div>
-									</div>
-								</div>
-								<img src='{{ static_url("pics/gallery_5.jpg") }}' />
-							</div>
-						</div>
-						<div class="col-1-3" onclick="gallery_6_alert()">
-							<div class="item-container">
-								<div class="item-caption">
-									<div class="item-caption-inner">
-										<div class="item-caption-inner1">
-											
-										</div>
-									</div>
-								</div>
-								<img src='{{ static_url("pics/gallery_6.jpg") }}' />
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-1-3" onclick="window.open('gallery_7','_self')">
-							<div class="item-container">
-								<div class="item-caption">
-									<div class="item-caption-inner">
-										<div class="item-caption-inner1">
-											
-										</div>
-									</div>
-								</div>
-								<img src='{{ static_url("pics/gallery_7.jpg") }}' />
-							</div>
-						</div>
-						<div class="col-1-3" onclick="gallery_8_alert()">
-							<div class="item-container">
-								<div class="item-caption">
-									<div class="item-caption-inner">
-										<div class="item-caption-inner1">
-											
-										</div>
-									</div>
-								</div>
-								<img src='{{ static_url("pics/gallery_8.jpg") }}' />
-							</div>
-						</div>
-						<div class="col-1-3" onclick="window.open('gallery_9','_self')">
-							<div class="item-container">
-								<div class="item-caption">
-									<div class="item-caption-inner">
-										<div class="item-caption-inner1">
-											
-										</div>
-									</div>
-								</div>
-								<img src='{{ static_url("pics/gallery_9.jpg") }}' />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<!-----------------content-box-3-------------------->
-		<section class="content-box boxstyle-3 box-3">
-			<div class="zerogrid">
-				<div class="row wrap-box"><!--Start Box-->
-					<h3>为什么会有这个网站<br><span>(当然首先因为zyf是一个程序员)</span></h3> 
-					<img src='{{ static_url("pics/why.jpg") }}' />
-					<p>“zyf，你给我去注册一个微博小号！”<br>“？？？弄啥咧”<br>“我的微博要保持人设的呀，我要去小号上秀恩爱！”<br>“你怕不是脑阔子有包包。。。”</p>
-					<br>
-					<p>于是这个大胆的想法在zyf脑海中诞生了，作为一名有理想有追求有抱负的程序员<br>年轻人，你渴望力量吗<br>让我来教教你用python、javascript、html、tornado速成一个网站吧！</p>
-				</div>
-			</div>
-		</section>
-		
-		<!-----------------content-box-4-------------------->
-		<section class="content-box boxstyle-1 box-4">
-			<div class="zerogrid">
-				<div class="row wrap-box"><!--Start Box-->
-					<div class="header">
-						<div class="wrapper">
-							<h2 class="color-yellow">ToDo & HaveDone</h2>
-							<hr class="line">
-							<div class="intro">Lorem ipsum dolor sit amet</div>
-						</div>
-					</div>
-					<div class="row"><!--Start Box-->
-						<div class="col-1-3">
-							<div class="wrap-col item">
-								<div class="zoom-container">
-									<img src='{{ static_url("blogs/blog1/front.jpg") }}' />
-								</div>
-								<div class="item-content">
-									<span>关于要吃的东西</span>
-									<p>想吃的东西太多了<br>gsq永远是zyf<br>练腹肌路上的拦路虎</p>
-									<a class="button" onclick="window.open('blog_1','_self')">More</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-1-3">
-							<div class="wrap-col item">
-								<div class="zoom-container">
-									<img src='{{ static_url("blogs/blog2/front.jpg") }}' />
-								</div>
-								<div class="item-content">
-									<span>关于要做的事</span>
-									<p>当然还有做过的事<br>还有gsq不让zyf做的事<br>还有gsq逼zyf做的事</p>
-									<a class="button" href="single.html">More</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-1-3">
-							<div class="wrap-col item">
-								<div class="zoom-container">
-									<img src='{{ static_url("blogs/blog3/front.jpg") }}' />
-								</div>
-								<div class="item-content">
-									<span>关于求生欲</span>
-									<p>如果gsq是阅读理解题<br>那么zyf一定道道零分<br>但是zyf仍然一题不落</p>
-									<a class="button" href="single.html">More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row"><!--Start Box-->
-						<div class="col-1-3">
-							<div class="wrap-col item">
-								<div class="zoom-container">
-									<img src='{{ static_url("blogs/blog4/front.jpg") }}' />
-								</div>
-								<div class="item-content">
-									<span>GSQ真的很过分</span>
-									<p>你永远也想不到<br>GSQ下一次会用什么办法<br>气的你不想和她说话</p>
-									<a class="button" href="single.html">More</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-1-3">
-							<div class="wrap-col item">
-								<div class="zoom-container">
-									<img src='{{ static_url("blogs/blog5/front.jpg") }}' />
-								</div>
-								<div class="item-content">
-									<span>GSQ做过的蠢事</span>
-									<p>你也同样想不到<br>GSQ下一次会做出什么样的事<br>让你知道人还可以这么蠢</p>
-									<a class="button" href="single.html">More</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-1-3">
-							<div class="wrap-col item">
-								<div class="zoom-container">
-									<img src='{{ static_url("blogs/blog6/front.jpg") }}' />
-								</div>
-								<div class="item-content">
-									<span>迟到了一年的表白</span>
-									<p>这一年GSQ问我最多的就是<br>“ZYF，你当初为什么不和我表白”<br>害，这不是来了吗</p>
-									<a class="button" href="single.html">More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<!-----------------content-box-5-------------------->
-		<section class="content-box boxstyle-2 box-5">
-			<div class="zerogrid">
-				<div class="row wrap-box"><!--Start Box-->
-					<div class="header">
-						<div class="wrapper">
-							<h2>Our Friends</h2>
-							<hr class="line">
-							<div class="intro">Lorem ipsum dolor sit amet</div>
-						</div>
-					</div>	
-					<div class="row">
-						<div class="col-1-2">
-							<div class="row post">
-								<div class="col-2-6">
-									<div class="wrap-col wrapper">
-										<a href="#"><img src="images/ava-4.jpg"></a>
-									</div>
-								</div>
-								<div class="col-4-6">
-									<div class="wrap-col">
-										<h3>Craig Herrera</h3>
-										<span>Best Man</span>
-										<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix.Et vel quod legimus, graeci electram ocurreret at his.</p>
-										<ul class="social-buttons">
-											<li><a href="#"><i class="fa fa-twitter"></i></a>
-											</li>
-											<li><a href="#"><i class="fa fa-facebook"></i></a>
-											</li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a>
-											</li>
-											<li><a href="#"><i class="fa fa-google-plus"></i></a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="row post">
-								<div class="col-2-6">
-									<div class="wrap-col wrapper">
-										<a href="#"><img src="images/ava-6.jpg"></a>
-									</div>
-								</div>
-								<div class="col-4-6">
-									<div class="wrap-col">
-										<h3>Sheryl Wilson</h3>
-										<span>Bridesmaid</span>
-										<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix.Et vel quod legimus, graeci electram ocurreret at his.</p>
-										<ul class="social-buttons">
-											<li><a href="#"><i class="fa fa-twitter"></i></a>
-											</li>
-											<li><a href="#"><i class="fa fa-facebook"></i></a>
-											</li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a>
-											</li>
-											<li><a href="#"><i class="fa fa-google-plus"></i></a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-1-2">
-							<div class="row post">
-								<div class="col-2-6 right">
-									<div class="wrap-col wrapper">
-										<a href="#"><img src="images/ava-7.jpg"></a>
-									</div>
-								</div>
-								<div class="col-4-6">
-									<div class="wrap-col">
-										<h3>Sheryl Wilson</h3>
-										<span>Bridesmaid</span>
-										<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix.Et vel quod legimus, graeci electram ocurreret at his.</p>
-										<ul class="social-buttons">
-											<li><a href="#"><i class="fa fa-twitter"></i></a>
-											</li>
-											<li><a href="#"><i class="fa fa-facebook"></i></a>
-											</li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a>
-											</li>
-											<li><a href="#"><i class="fa fa-google-plus"></i></a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="row post">
-								<div class="col-2-6 right">
-									<div class="wrap-col wrapper">
-										<a href="#"><img src="images/ava-8.jpg"></a>
-									</div>
-								</div>
-								<div class="col-4-6">
-									<div class="wrap-col">
-										<h3>Craig Herrera</h3>
-										<span>Best Man</span>
-										<p>His primis omittam intellegat cu, voluptua appetere mea ad, eu harum oporteat vix.Et vel quod legimus, graeci electram ocurreret at his.</p>
-										<ul class="social-buttons">
-											<li><a href="#"><i class="fa fa-twitter"></i></a>
-											</li>
-											<li><a href="#"><i class="fa fa-facebook"></i></a>
-											</li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a>
-											</li>
-											<li><a href="#"><i class="fa fa-google-plus"></i></a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<!-----------------content-box-6-------------------->
-		<section class="content-box boxstyle-1 box-6">
-			<div class="zerogrid">
-				<div class="row wrap-box"><!--Start Box-->
-					<div class="header">
-						<div class="wrapper">
-							<h2 class="color-yellow">LOCATION</h2>
-							<hr class="line">
-							<div class="intro">Lorem ipsum dolor sit amet</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-1-3">
-							<div class="wrap-col">
-								<i class="fa fa-map-marker"></i>
-								<h3>Location</h3>
-								<p>The wedding party will begin @ <span>14:00 P.M</span> on <span>Monday July 23, 2015</span> . Free drinks and music is on the way, no costume is needed.</p>
-							</div>
-						</div>
-						<div class="col-1-3">
-							<div class="wrap-col">
-								<i class="fa fa-phone"></i>
-								<h3>Location</h3>
-								<p>Gulshan Hall, 60 Grant Ave. Carteret NJ 0708 (732) 803-01 03, (732) 806-01 04 info@emailname.com</p>
-							</div>
-						</div>
-						<div class="col-1-3">
-							<div class="wrap-col">
-								<i class="fa fa-envelope"></i>
-								<h3>Location</h3>
-								<p><span>Eevent One :</span> Event Name and Time <br><span>Eevent Two :</span> Event Name and Time <br><span>Eevent Three :</span> Event Name and Time</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
-</section>
-
-<!--////////////////////////////////////Footer-->
-<footer>
-	
-	<div class="wrap-footer">
-		<div class="zerogrid">
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="container">
 			<div class="row">
-				<h3>Contact</h3>
-				<span>Phone / +80 999 99 9999 </span></br>
-				<span>Email / info@domain.com  </span></br>
-				<span>Studio / Moonshine St. 14/05 Light City </span></br>
-				<span>Copyright &copy; 2019.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></span>
+				<div class="col-xs-2">
+					<div id="fh5co-logo"><a href="index.html">Zyf &amp; Gsq<strong>.</strong></a></div>
+				</div>
+				<div class="col-xs-10 text-right menu-1">
+					<ul>
+						<li class="active">
+							<a href="\">Home</a>
+						</li>
+						<li>
+							<a href="\story">Story</a>
+						</li>
+						<li class="has-dropdown">
+							<a href="services.html">Services</a>
+							<ul class="dropdown">
+								<li><a href="#">Web Design</a></li>
+								<li><a href="#">eCommerce</a></li>
+								<li><a href="#">Branding</a></li>
+								<li><a href="#">API</a></li>
+							</ul>
+						</li>
+						<li class="has-dropdown">
+							<a href="gallery.html">Gallery</a>
+							<ul class="dropdown">
+								<li><a href="#">大连</a></li>
+								<li><a href="#">JJ演唱会</a></li>
+								<li><a href="#">随便拍拍</a></li>
+								<li><a href="#">认真拍拍</a></li>
+								<li><a href="#">迪士尼</a></li>
+							</ul>
+						</li>
+						<li><a href="#about">About</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</nav>
+
+	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(../static/homepage/images/front_1.jpg);" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							<h1>ZYF &amp; GSQ</h1>
+							<h2>Happy Birthday<br>&amp;<br>Our First Anniversary</h2>
+							<div class="simply-countdown simply-countdown-one"></div>
+							<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="fh5co-couple">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h2>Happy Birthday!</h2>
+					<h3>January 12th, 2020 Negombo, Sri Lanka</h3>
+					<p>热烈庆祝Gsq女士在斯里兰卡度过了22岁的第一天！</p>
+				</div>
+			</div>
+			<div class="couple-wrap animate-box">
+				<div class="couple-half">
+					<div class="groom">
+						<img src='{{ static_url("homepage/images/zyf_touxiang.jpg") }}' alt="groom" class="img-responsive">
+					</div>
+					<div class="desc-groom">
+						<h3>Zhang Yufeng</h3>
+						<p>
+							计科院一男的<br><br>
+							所爱隔山海，山海...<br>
+						</p>
+					</div>
+				</div>
+				<p class="heart text-center"><i class="icon-heart2"></i></p>
+				<div class="couple-half">
+					<div class="bride">
+						<img src='{{ static_url("homepage/images/gsq_touxiang.jpg") }}' alt="groom" class="img-responsive">
+					</div>
+					<div class="desc-bride">
+						<h3>Gu Siqi</h3>
+						<p>
+							商学院一女的<br><br>
+							在山的那边海的那边有一群蓝精灵！<br>
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</footer>
+
+	<div id="fh5co-event" class="fh5co-bg" style="background-image:url(../static/homepage/images/front_2.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<span>Our Special Events</span>
+					<h2>Birthday &amp; First Anniversary</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="col-md-10 col-md-offset-1">
+							<div class="col-md-6 col-sm-6 text-center">
+								<div class="event-wrap animate-box">
+									<h3>Gsq's Birthday</h3>
+									<div class="event-col">
+										<i class="icon-clock"></i>
+										<span>00:00 AM</span>
+									</div>
+									<div class="event-col">
+										<i class="icon-calendar"></i>
+										<span>Sunday 12</span>
+										<span>January, 2020</span>
+									</div>
+									<p>
+										在一月十二号零点的这一刻<br>
+										我敲下了回车键<br>
+										让这个网站在互联网上拥有了一席之地<br>
+										以此来庆祝Gsq女士22岁生日
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 text-center">
+								<div class="event-wrap animate-box">
+									<h3>First Anniversary</h3>
+									<div class="event-col">
+										<i class="icon-clock"></i>
+										<span>10:05 PM</span>
+									</div>
+									<div class="event-col">
+										<i class="icon-calendar"></i>
+										<span>Sunday 12</span>
+										<span>January, 2020</span>
+									</div>
+									<p>
+										万万没想到 万万没想到<br>
+										这就一年了<br>
+										我们在大连的时候在一起<br>
+										一周年的时候又跑来了斯里兰卡
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-couple-story">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<span>We Love Each Other</span>
+					<h2>Our Story</h2>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0">
+					<ul class="timeline animate-box">
+						<li class="animate-box">
+							<div class="timeline-badge" style="background-image:url(../static/homepage/images/story_1.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">First We Meet</h3>
+									<span class="date">December 1, 2018</span>
+								</div>
+								<div class="timeline-body">
+									<p>
+										在青演结束的这天晚上<br>
+										出色完成工作的Gsq<br>
+										和我们一起来到凤凰街上的KFC吃冰淇凌打掼蛋<br>
+										Gsq故意拆开了两个王炸<br>
+										用两个大王和两个小王<br>
+										把有幸成为她下家的我按在牌桌上摩擦<br>
+										那天晚上我意识到<br>
+										这个女人有点东西
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge" style="background-image:url(../static/homepage/images/story_2.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">First Gift</h3>
+									<span class="date">December 25, 2018</span>
+								</div>
+								<div class="timeline-body">
+									<p>
+										第一份礼物<br>
+										应该...好像...是我送的吧？<br>
+										圣诞节这天<br>
+										我送给了Gsq一条Rastaclat的手链<br>
+										没有在平安夜送是因为<br>
+										快递太慢了...
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box">
+							<div class="timeline-badge" style="background-image:url(../static/homepage/images/story_3.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Building the Web</h3>
+									<span class="date">December 9, 2019</span>
+								</div>
+								<div class="timeline-body">
+									<p>
+										被Gsq拖来图书馆陪她学习的我<br>
+										小心翼翼地在旁边敲着代码<br>
+										手放在快捷键上随时准备切屏<br>
+										生怕这臭猪突然转头<br>
+										看到我在做网站（虽然我觉得她看不懂）<br>
+										好嘛 转头一看<br>
+										她已经趴下睡觉了
+									</p>
+								</div>
+							</div>
+						</li>
+			    	</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-gallery" class="fh5co-section-gray">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<span>Our Memories</span>
+					<h2>Photos Gallery</h2>
+					<p>
+						害 拍照真是 太 太 太 太 难了<br>
+						<strong>点击图片收获更多快乐</strong>
+					</p>
+				</div>
+			</div>
+			<div class="row row-bottom-padded-md">
+				<div class="col-md-12">
+					<ul id="fh5co-gallery-list">
+						
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(../static/homepage/images/gallery_1.png); "> 
+							<a href="/gallery_1">
+								<div class="case-studies-summary">
+									<span>6 Photos</span>
+									<h2>随便拍拍嗷</h2>
+								</div>
+							</a>
+						</li>
+
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(../static/homepage/images/gallery_3.png); ">
+							<a href="javascript:gallery_3_alert();" class="color-3">
+								<div class="case-studies-summary">
+									<span>9 Photos</span>
+									<h2>开学迎新那天...</h2>
+								</div>
+							</a>
+						</li>
+
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(../static/homepage/images/gallery_2.JPG); ">
+							<a href="/gallery_2" class="color-2">
+								<div class="case-studies-summary">
+									<span>4 Photos</span>
+									<h2>认真拍拍！</h2>
+								</div>
+							</a>
+						</li>
+
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(../static/homepage/images/gallery_4.JPG); ">
+							<a href="javascript:gallery_4_alert();" class="color-4">
+								<div class="case-studies-summary">
+									<span>12 Photos</span>
+									<h2>看看美女！</h2>
+								</div>
+							</a>
+						</li>
+
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(../static/homepage/images/gallery_5.JPG); ">
+							<a href="/gallery_5" class="color-3">
+								<div class="case-studies-summary">
+									<span>7 Photos</span>
+									<h2>在大连的山顶上</h2>
+								</div>
+							</a>
+						</li>
+
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(../static/homepage/images/gallery_6.JPG); ">
+							<a href="javascript:gallery_6_alert();" class="color-4">
+								<div class="case-studies-summary">
+									<span>8 Photos</span>
+									<h2>帅到模糊</h2>
+								</div>
+							</a>
+						</li>
+
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(../static/homepage/images/gallery_7.JPG); ">
+							<a href="/gallery_7" class="color-4">
+								<div class="case-studies-summary">
+									<span>5 Photos</span>
+									<h2>JJ演唱会</h2>
+								</div>
+							</a>
+						</li>
+
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(../static/homepage/images/gallery_9.JPG); ">
+							<a href="/gallery_9" class="color-6">
+								<div class="case-studies-summary">
+									<span>7 Photos</span>
+									<h2>迪士尼</h2>
+								</div>
+							</a>
+						</li>
+
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(../static/homepage/images/gallery_8.JPG); "> 
+							<a href="javascript:gallery_8_alert();" class="color-5">
+								<div class="case-studies-summary">
+									<span>10 Photos</span>
+									<h2>看电影之前要干啥呢</h2>
+								</div>
+							</a>
+						</li>
+					</ul>		
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<span class="icon">
+									<i class="icon-aircraft"></i>
+								</span>
+
+								<span class="counter js-counter" data-from="0" data-to="3" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter-label">Journey Taken</span>
+
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<span class="icon">
+									<i class="icon-bell"></i>
+								</span>
+
+								<span class="counter js-counter" data-from="0" data-to="126" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter-label">Restaurants Ate</span>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<span class="icon">
+									<i class="icon-calendar"></i>
+								</span>
+								<span class="counter js-counter" data-from="0" data-to="92" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter-label">Events Done</span>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 animate-box">
+							<div class="feature-center">
+								<span class="icon">
+									<i class="icon-clock"></i>
+								</span>
+
+								<span class="counter js-counter" data-from="0" data-to="2345" data-speed="5000" data-refresh-interval="50">1</span>
+								<span class="counter-label">Hours Spent</span>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-testimonial">
+		<div class="container">
+			<div class="row">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<span>Best Wishes</span>
+						<h2>Friends Wishes</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 animate-box">
+						<div class="wrap-testimony">
+							<div class="owl-carousel-fullwidth">
+								<div class="item">
+									<div class="testimony-slide active text-center">
+										<figure>
+											<img src="images/couple-1.jpg" alt="user">
+										</figure>
+										<span>Yao Yao, via <a href="#" class="twitter">WeChat</a></span>
+										<blockquote>
+											<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"</p>
+										</blockquote>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide active text-center">
+										<figure>
+											<img src="images/couple-2.jpg" alt="user">
+										</figure>
+										<span>John Doe, via <a href="#" class="twitter">WeChat</a></span>
+										<blockquote>
+											<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, at the coast of the Semantics, a large language ocean."</p>
+										</blockquote>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide active text-center">
+										<figure>
+											<img src="images/couple-3.jpg" alt="user">
+										</figure>
+										<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
+										<blockquote>
+											<p>"Far far away, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
+										</blockquote>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide active text-center">
+										<figure>
+											<img src="images/couple-3.jpg" alt="user">
+										</figure>
+										<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
+										<blockquote>
+											<p>"Far far away, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
+										</blockquote>
+									</div>
+								</div>
+								<div class="item">
+									<div class="testimony-slide active text-center">
+										<figure>
+											<img src="images/couple-3.jpg" alt="user">
+										</figure>
+										<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
+										<blockquote>
+											<p>"Far far away, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-services" class="fh5co-section-gray">
+		<div class="container">
+			
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>We Offer Services</h2>
+					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-emoji-happy"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>We Organized Events</h3>
+							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+						</div>
+					</div>
+
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-image"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Photoshoot</h3>
+							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+						</div>
+					</div>
+
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<span class="icon">
+							<i class="icon-video"></i>
+						</span>
+						<div class="feature-copy">
+							<h3>Video Editing</h3>
+							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-md-6 animate-box">
+					<div class="fh5co-video fh5co-bg" style="background-image: url(images/img_bg_3.jpg); ">
+						<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo">
+							<i class="icon-video2"></i>
+						</a>
+						<div class="overlay"></div>
+					</div>
+				</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<a name='about'></a>
+	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(../static/homepage/images/img_bg_4.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>About</h2>
+					<p>关于为什么会有这个网站...那可就说来话长了</p>
+					<p><strong>那就长话短说！</strong></p>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-10 col-md-offset-1">
+					<form class="form-inline">
+						<div class="col-md-4 col-sm-4">
+							<div class="form-group" style="color: white">
+								Gsq：“你给我去开一个微博小号！”<br>
+								Zyf：“啥...”<br>
+								Gsq：“我微博要保持人设的呀！我要在小号上秀恩爱！”<br>
+								Zyf：“你怕不是脑阔子有包包...”
+							</div>
+						</div>
+						<div class="couple-half" style="width: 25%; text-align:center;">
+							<div class="groom">
+								<img src='{{ static_url("homepage/images/why.jpg") }}' alt="groom" class="img-responsive" style="margin: auto">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4" style="color: white">
+							于是这个伟大的想法就在Zyf的脑海中诞生了！<br>
+							作为一个有理想有抱负的程序员！<br>
+							年轻人，你渴望力量吗！<br>
+							让我教你用python+tornado+html+css+JS搭一个网站吧！
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer id="fh5co-footer" role="contentinfo">
+		<div class="container">
+
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy; 2019 Code by ZYF</small> 
+						<small class="block">也许有人也需要我帮他做一个网站吗 <a href="http://www.cssmoban.com/" target="_blank" title="支付宝收款码">（你猜猜这个链接是啥）</a> 价格公道童叟无欺啊 </small>
+					</p>
+					<p>
+						<ul class="fh5co-social-icons">
+							<li><a href="#"><i class="icon-qq"></i></a></li>
+							<li><a href="https://weibo.com/u/5973931920?is_hot=1"><i class="icon-sina-weibo"></i></a></li>
+							<li><a href="https://github.com/Ninecl"><i class="icon-github"></i></a></li>
+							<li><a href="#"><i class="icon-skype"></i></a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
 	
-	<!-- Google Map -->
+	<!-- jQuery -->
+	<script src='{{ static_url("homepage/js/jquery.min.js") }}'></script>
+	<!-- jQuery Easing -->
+	<script src='{{ static_url("homepage/js/jquery.easing.1.3.js") }}'></script>
+	<!-- Bootstrap -->
+	<script src='{{ static_url("homepage/js/bootstrap.min.js") }}'></script>
+	<!-- Waypoints -->
+	<script src='{{ static_url("homepage/js/jquery.waypoints.min.js") }}'></script>
+	<!-- Carousel -->
+	<script src='{{ static_url("homepage/js/owl.carousel.min.js") }}'></script>
+	<!-- countTo -->
+	<script src='{{ static_url("homepage/js/jquery.countTo.js") }}'></script>
+
+	<!-- Stellar -->
+	<script src='{{ static_url("homepage/js/jquery.stellar.min.js") }}'></script>
+	<!-- Magnific Popup -->
+	<script src='{{ static_url("homepage/js/jquery.magnific-popup.min.js") }}'></script>
+	<script src='{{ static_url("homepage/js/magnific-popup-options.js") }}'></script>
+
+	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
+	<script src='{{ static_url("homepage/js/simplyCountdown.js") }}'></script>
+	<!-- Main -->
+	<script src='{{ static_url("homepage/js/main.js") }}'></script>
+
 	<script>
-		$('.maps').click(function () {
-		$('.maps iframe').css("pointer-events", "auto");
-	});
+		var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
 
-	$( ".maps" ).mouseleave(function() {
-	  $('.maps iframe').css("pointer-events", "none"); 
-	});
-	</script>
-	
-	<!-- Countdown -->
-    <script src="stylesheet" href='{{ static_url("js/jquery.mb-comingsoon.min.js") }}'></script>
-    <script type="text/javascript">
-        $(function () {
-            $('#myCounter').mbComingsoon({ expiryDate: new Date(2017, 0, 1, 9, 30), speed:100 });
-            setTimeout(function () {
-                $(window).resize();
-            }, 200);
-        });
+		// default example
+		simplyCountdown('.simply-countdown-one', {
+			year: 2019,
+			month: 1,
+			day: 12
+		});
+
+		//jQuery example
+		$('#simply-countdown-losange').simplyCountdown({
+			year: 2019,
+			month: 1,
+			day: 12,
+			enableUtc: false
+		});
 	</script>
 
-	
-</div>
-<script type="text/javascript">
-	function countDown()
-	{
-		var startTime = "2019/01/12 20:00:00";   //开始时间
-		var currentTime = parseInt(new Date().getTime());  //当前的时间
-		var startTime = parseInt(new Date(startTime).getTime());
-		var countTime = parseInt(currentTime / 1000 - startTime / 1000);  //需要倒计时的时间
-		var days = parseInt(countTime/60/60/24)
-		var hours = parseInt(countTime/60/60%24);
-		var minutes = parseInt(countTime/60%60);
-		var seconds = parseInt(countTime%60);
-		var seconds_1 = parseInt(seconds / 10)
-		var seconds_2 = parseInt(seconds % 10)
-		var minutes_1 = parseInt(minutes / 10)
-		var minutes_2 = parseInt(minutes % 10)
-		var hours_1 = parseInt(hours / 10)
-		var hours_2 = parseInt(hours % 10)
-		var days_1 = parseInt(days / 100)
-		var days_2 = parseInt(days / 10 % 10)
-		var days_3 = parseInt(days % 10)
-		document.getElementById("seconds_1").innerHTML = seconds_1
-		document.getElementById("seconds_2").innerHTML = seconds_2
-		document.getElementById("minutes_1").innerHTML = minutes_1
-		document.getElementById("minutes_2").innerHTML = minutes_2
-		document.getElementById("hours_1").innerHTML = hours_1
-		document.getElementById("hours_2").innerHTML = hours_2
-		document.getElementById("days_1").innerHTML = days_1
-		document.getElementById("days_2").innerHTML = days_2
-		document.getElementById("days_3").innerHTML = days_3
-		console.log(day, hours, minutes, seconds)
-	}
-	setInterval("countDown()", 1000);
-</script>
-<script type="text/javascript">
-	function startCount()
-	{
-		var startTime = "2019/01/12 20:00:00";   //开始时间
-		var currentTime = parseInt(new Date().getTime());  //当前的时间
-		var startTime = parseInt(new Date(startTime).getTime());
-		var countTime = parseInt(currentTime / 1000 - startTime / 1000);  //需要倒计时的时间
-		var days = parseInt(countTime/60/60/24)
-		var hours = parseInt(countTime/60/60%24);
-		var minutes = parseInt(countTime/60%60);
-		var seconds = parseInt(countTime%60);
-		var seconds_1 = parseInt(seconds / 10)
-		var seconds_2 = parseInt(seconds % 10)
-		var minutes_1 = parseInt(minutes / 10)
-		var minutes_2 = parseInt(minutes % 10)
-		var hours_1 = parseInt(hours / 10)
-		var hours_2 = parseInt(hours % 10)
-		var days_1 = parseInt(days / 100)
-		var days_2 = parseInt(days / 10 % 10)
-		var days_3 = parseInt(days % 10)
-		document.getElementById("seconds_1").innerHTML = seconds_1
-		document.getElementById("seconds_2").innerHTML = seconds_2
-		document.getElementById("minutes_1").innerHTML = minutes_1
-		document.getElementById("minutes_2").innerHTML = minutes_2
-		document.getElementById("hours_1").innerHTML = hours_1
-		document.getElementById("hours_2").innerHTML = hours_2
-		document.getElementById("days_1").innerHTML = days_1
-		document.getElementById("days_2").innerHTML = days_2
-		document.getElementById("days_3").innerHTML = days_3
-		console.log(day, hours, minutes, seconds)
-	}
-	window.onload = startCount()
-</script>
-<script type="text/javascript">
-	function gallery_3_alert()
-	{
-		alert("做一个网页很累的好吗！你还想每个都能点啊？？？点下一个吧！");
-	}
+	<script type="text/javascript">
+		function gallery_3_alert()
+		{
+			alert("做一个网页很累的好吗！你还想每个都能点啊？？？点下一个吧！");
+		}
 
-	function gallery_4_alert()
-	{
-		alert("这是我女朋友，你点啥点？？？你点了想干啥？？？点下一个！");
-	}
+		function gallery_4_alert()
+		{
+			alert("这是我女朋友，你点啥点？？？你点了想干啥？？？点下一个！");
+		}
 
-	function gallery_6_alert()
-	{
-		alert("哥？？？我一大老爷们你也点？？？不搞了不搞了，下一个真能点。");
-	}
+		function gallery_6_alert()
+		{
+			alert("哥？？？我一大老爷们你也点？？？不搞了不搞了，下一个真能点。");
+		}
 
-	function gallery_8_alert()
-	{
-		alert("你倒是猜猜最后一个能不能点嘿嘿嘿");
-	}
-</script>
-</body>
+		function gallery_8_alert()
+		{
+			alert("最后一个 当然不给你点啦嘿嘿嘿");
+		}
+	</script>
+
+	</body>
 </html>
+
