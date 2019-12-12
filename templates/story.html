@@ -29,24 +29,24 @@
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 	
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href='{{ static_url("homepage/css/animate.css") }}'>
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href='{{ static_url("homepage/css/icomoon.css") }}'>
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href='{{ static_url("homepage/css/bootstrap.css") }}'>
 
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href='{{ static_url("homepage/css/magnific-popup.css") }}'>
 
 	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href='{{ static_url("homepage/css/owl.carousel.min.css") }}'>
+	<link rel="stylesheet" href='{{ static_url("homepage/css/owl.theme.default.min.css") }}'>
 
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href='{{ static_url("homepage/css/style.css") }}'>
 
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src='{{ static_url("homepage/js/modernizr-2.6.2.min.js") }}'></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -62,12 +62,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">Wedding<strong>.</strong></a></div>
+					<div id="fh5co-logo"><a href="index.html">Zyf &amp; Gsq<strong>.</strong></a></div>
 				</div>
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li class="active"><a href="about.html">Story</a></li>
+						<li><a href="/">Home</a></li>
+						<li class="active"><a href="/story">Story</a></li>
 						<li class="has-dropdown">
 							<a href="services.html">Services</a>
 							<ul class="dropdown">
@@ -94,14 +94,14 @@
 		</div>
 	</nav>
 
-	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/img_bg_1.jpg);">
+	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(../static/homepage/images/front_1.jpg);">
 		<div class="overlay"></div>
 		<div class="fh5co-container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Couple Story</h1>
+							<h1>Our Stories</h1>
 							<h2>Free HTML5 templates Made by <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a></h2>
 						</div>
 					</div>
@@ -114,29 +114,35 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h2>Hello!</h2>
-					<h3>November 28th, 2016 New York, USA</h3>
-					<p>We invited you to celebrate our wedding</p>
+					<h2>Here Here</h2>
+					<h3>以下故事绝对真实 不包含任何捏造虚构抄袭内容</h3>
+					<p>如果白天联系不上我了 就表示这些故事我写的有问题 帮我劝劝Gsq手下留情</p>
 				</div>
 			</div>
 			<div class="couple-wrap animate-box">
 				<div class="couple-half">
 					<div class="groom">
-						<img src="images/groom.jpg" alt="groom" class="img-responsive">
+						<img src='{{ static_url("homepage/images/zyf_touxiang.jpg") }}' alt="groom" class="img-responsive">
 					</div>
 					<div class="desc-groom">
-						<h3>Joefrey Mahusay</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+						<h3>Zhang Yufeng</h3>
+						<p>
+							东风夜放花千树<br>
+							我想去你家里住
+						</p>
 					</div>
 				</div>
 				<p class="heart text-center"><i class="icon-heart2"></i></p>
 				<div class="couple-half">
 					<div class="bride">
-						<img src="images/bride.jpg" alt="groom" class="img-responsive">
+						<img src='{{ static_url("homepage/images/gsq_touxiang.jpg") }}' alt="groom" class="img-responsive">
 					</div>
 					<div class="desc-bride">
-						<h3>Sheila Mahusay</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove</p>
+						<h3>Gu Siqi</h3>
+						<p>
+							万水千山总是情<br>
+							你问我爸行不行
+						</p>
 					</div>
 				</div>
 			</div>
@@ -147,47 +153,217 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<span>We Love Each Other</span>
+					<span>Timeline</span>
 					<h2>Our Story</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					<p>你可以不相信故事是真的，但是你要相信Zyf满满的求生欲</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12 col-md-offset-0">
 					<ul class="timeline animate-box">
 						<li class="animate-box">
-							<div class="timeline-badge" style="background-image:url(images/couple-1.jpg);"></div>
+							<div class="timeline-badge" style="background-image:url(../static/story/story_1.jpg);"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">First We Meet</h3>
-									<span class="date">December 25, 2015</span>
+									<h3 class="timeline-title">是Gsq先来加的我QQ！</h3>
+									<span class="date">June 20, 2017</span>
 								</div>
 								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>
+										说起来你们可能不信<br>
+										大一Gsq就加了我QQ<br>
+										没错 是她来加了我QQ<br>
+										然后！<br>
+										就没有然后了...<br><br>
+									</p>
 								</div>
 							</div>
 						</li>
 						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge" style="background-image:url(images/couple-2.jpg);"></div>
+							<div class="timeline-badge" style="background-image:url(../static/homepage/images/story_1.jpg);"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">First Date</h3>
-									<span class="date">December 28, 2015</span>
+									<h3 class="timeline-title">这个女人有点东西</h3>
+									<span class="date">December 1, 2018</span>
 								</div>
 								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>
+										在青演结束的这天晚上<br>
+										出色完成工作的Gsq<br>
+										和我们一起来到凤凰街上的KFC吃冰淇凌打掼蛋<br>
+										Gsq故意拆开了两个王炸<br>
+										用两个大王和两个小王<br>
+										把有幸成为她下家的我按在牌桌上摩擦<br>
+										那天晚上我开始意识到<br>
+										这个女人 有点东西
+									</p>
 								</div>
 							</div>
 						</li>
 						<li class="animate-box">
-							<div class="timeline-badge" style="background-image:url(images/couple-3.jpg);"></div>
+							<div class="timeline-badge" style="background-image:url(../static/homepage/images/story_2.jpg);"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">In A Relationship</h3>
-									<span class="date">January 1, 2016</span>
+									<h3 class="timeline-title">第一份礼物</h3>
+									<span class="date">December 25, 2018</span>
 								</div>
 								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>
+										第一份礼物<br>
+										应该...好像...是我送的吧？<br>
+										圣诞节这天<br>
+										我送给了Gsq一条Rastaclat的手链<br>
+										没有在平安夜送是因为<br>
+										快递太慢了...
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge" style="background-image:url(../static/story/story_2.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">关于Zyf被偷掉的手机</h3>
+									<span class="date">January 5, 2019</span>
+								</div>
+								<div class="timeline-body">
+									<p>
+										考试周每天就和Gsq一起吃吃饭<br>
+										一起聊天一起哈哈哈哈哈哈<br>
+										然后我的手机<br>
+										就在我们的哈哈哈哈哈里面被偷掉了
+										<span class="icon">
+											<i class="icon-emoji-sad"></i>
+										</span>
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box">
+							<div class="timeline-badge" style="background-image:url(../static/story/story_3.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">啊！这历史性的时刻！</h3>
+									<span class="date">January 12, 2019</span>
+								</div>
+								<div class="timeline-body">
+									<p>
+										关于我和Gsq是怎么在一起的<br>
+										今天终于要公布官方版本了!<br>
+										给Gsq切完生日蛋糕之后<br>
+										我们一起坐在沙发上<br>
+										GSQ发了朋友圈 我发了微博<br>
+										照片里没有我们对方 但是都是我们一起在大连拍的照片<br>
+										果然！<br>
+										没过多久 神探YZW发现了问题！<br>
+										在YAOYAO哥发消息来问我们是不是在一起了<br>
+										是不是一起出去旅游的时候<br>
+										ZYF拿过GSQ的手机问她：“我回是的了？”<br>
+										GSQ红着脸点了点头<br>
+										从此他们一起过上了幸福的生活！<br><br>
+										当然...这时ZYF的版本...<br>
+										GSQ的版本是<br>
+										ZYF！！！你为什么当时没有和我表白？？？<br>
+										ZYF！！！你怎么浑水摸鱼就让我和你在一起了？？？<br>
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge" style="background-image:url(../static/story/story_4.png);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">JJ演唱会</h3>
+									<span class="date">April 6, 2019</span>
+								</div>
+								<div class="timeline-body">
+									<p>
+										机智的我们骑着电瓶车来到了体育馆<br>
+										散场的时候晃晃悠悠从打不到车的人群前面穿过<br>
+										真是太幸福了<br>
+										苏州的限定曲是小酒窝<br>
+										而且还唱了雪落下的声音<br>
+										Gsq让我想清楚再说到底是为什么才幸福<br>
+										当然是因为JJ唱歌好听啊<br>
+										难不成还是因为你吗（手动狗头）
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box">
+							<div class="timeline-badge" style="background-image:url(../static/story/story_5.png);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">那些花花草草啊</h3>
+									<span class="date">April 13, 2019</span>
+								</div>
+								<div class="timeline-body">
+									<p>
+										Gsq做了一个小花盆<br>
+										所以我们一起去花鸟市场买了三盆多肉<br>
+										当时...<br>
+										当时我以为我能养活它们
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge" style="background-image:url(../static/story/story_6.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">被迫补测</h3>
+									<span class="date">April 20, 2019</span>
+								</div>
+								<div class="timeline-body">
+									<p>
+										因为关节炎没能参加体测的Zyf<br>
+										被迫四月二十号参加补测<br>
+										Gsq在体测前的两个星期每天都陪我去操场跑步<br>
+										见证我从4：30跑到3：50<br>
+										然后体测那天被Gsq的朋友们拍到<br>
+										我在思考她们会不会觉得我是一个要补测的菜逼...
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box">
+							<div class="timeline-badge" style="background-image:url(../static/story/story_7.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">迪士尼诶</h3>
+									<span class="date">April 25, 2019</span>
+								</div>
+								<div class="timeline-body">
+									<p>
+										心心念念地终于去了迪士尼<br>
+										后悔没有买提前入场的我们<br>
+										买了三个快速通道？？？<br><br>
+										给Gsq买了仙女棒<br>
+										给Gsq买了小毛毯<br>
+										我们坐在广场上看着烟花<br>
+										约定下次要来坐七个小矮人地过山车<br>
+										约定了要一直让Gsq做公主
+									</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge" style="background-image:url(../static/homepage/images/story_3.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">悄咪咪做网站</h3>
+									<span class="date">December 9, 2019</span>
+								</div>
+								<div class="timeline-body">
+									<p>
+										被Gsq拖来图书馆陪她学习的我<br>
+										小心翼翼地在旁边敲着代码<br>
+										手放在快捷键上随时准备切屏<br>
+										生怕这臭猪突然转头<br>
+										看到我在做网站（虽然我觉得她看不懂）<br>
+										好嘛 转头一看<br>
+										她已经趴下睡觉了
+									</p>
 								</div>
 							</div>
 						</li>
@@ -202,29 +378,7 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Are You Attending?</h2>
-					<p>Please Fill-up the form to notify you that you're attending. Thanks.</p>
-				</div>
-			</div>
-			<div class="row animate-box">
-				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline">
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="name" class="sr-only">Name</label>
-								<input type="name" class="form-control" id="name" placeholder="Name">
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Email">
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">I am Attending</button>
-						</div>
-					</form>
+					<h2>To Be Continued...</h2>
 				</div>
 			</div>
 		</div>
@@ -232,55 +386,18 @@
 
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
-			<!-- <div class="row row-pb-md">
-				<div class="col-md-4 fh5co-widget">
-					<h3>The Company</h3>
-					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-					<p><a href="#">Learn More</a></p>
-				</div>
-				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
-					<ul class="fh5co-footer-links">
-						<li><a href="#">About</a></li>
-						<li><a href="#">Help</a></li>
-						<li><a href="#">Contact</a></li>
-						<li><a href="#">Terms</a></li>
-						<li><a href="#">Meetups</a></li>
-					</ul>
-				</div>
-
-				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
-					<ul class="fh5co-footer-links">
-						<li><a href="#">Shop</a></li>
-						<li><a href="#">Privacy</a></li>
-						<li><a href="#">Testimonials</a></li>
-						<li><a href="#">Handbook</a></li>
-						<li><a href="#">Held Desk</a></li>
-					</ul>
-				</div>
-
-				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
-					<ul class="fh5co-footer-links">
-						<li><a href="#">Find Designers</a></li>
-						<li><a href="#">Find Deelopers</a></li>
-						<li><a href="#">Teams</a></li>
-						<li><a href="#">Advertise</a></li>
-						<li><a href="#">API</a></li>
-					</ul>
-				</div>
-			</div> -->
-
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
-						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> 
-						<small class="block">More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></small>
+						<small class="block">&copy; 2019 Code by ZYF</small> 
+						<small class="block">也许有人也需要我帮他做一个网站吗 <a href='{{ static_url("homepage/images/zhifubao.jpg") }}' target="_blank" title="支付宝收款码">（你猜猜这个链接是啥）</a> 价格公道童叟无欺啊 </small>
 					</p>
 					<p>
 						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							<li><a href="#"><i class="icon-qq"></i></a></li>
+							<li><a href="https://weibo.com/u/5973931920?is_hot=1"><i class="icon-sina-weibo"></i></a></li>
+							<li><a href="https://github.com/Ninecl"><i class="icon-github"></i></a></li>
+							<li><a href="#"><i class="icon-skype"></i></a></li>
 						</ul>
 					</p>
 				</div>
@@ -295,26 +412,26 @@
 	</div>
 	
 	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
+	<script src='{{ static_url("homepage/js/jquery.min.js") }}'></script>
 	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
+	<script src='{{ static_url("homepage/js/jquery.easing.1.3.js") }}'></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src='{{ static_url("homepage/js/bootstrap.min.js") }}'></script>
 	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<script src='{{ static_url("homepage/js/jquery.waypoints.min.js") }}'></script>
 	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
+	<script src='{{ static_url("homepage/js/owl.carousel.min.js") }}'></script>
 	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
+	<script src='{{ static_url("homepage/js/jquery.countTo.js") }}'></script>
 
 	<!-- Stellar -->
-	<script src="js/jquery.stellar.min.js"></script>
+	<script src='{{ static_url("homepage/js/jquery.stellar.min.js") }}'></script>
 	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
+	<script src='{{ static_url("homepage/js/jquery.magnific-popup.min.js") }}'></script>
+	<script src='{{ static_url("homepage/js/magnific-popup-options.js") }}'></script>
 
 	<!-- Main -->
-	<script src="js/main.js"></script>
+	<script src='{{ static_url("homepage/js/main.js") }}'></script>
 
 	</body>
 </html>
