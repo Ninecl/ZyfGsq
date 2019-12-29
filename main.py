@@ -13,6 +13,10 @@ class StoryHandler(tornado.web.RequestHandler):
     def get(self):
         self.render('story.html')
 
+class GalleryHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render('gallery.html')
+
 
 class gallery_1(tornado.web.RequestHandler):
     def get(self):
@@ -39,16 +43,33 @@ class gallery_9(tornado.web.RequestHandler):
         self.render('gallery_9.html')
 
 
+class SigninHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render('signin.html')
+
+
+class SayHandler(tornado.web.RequestHandler):
+    def get(self):
+        password = self.get_argument("password")
+        if password == 'Lancelot7923':
+            self.render("say.html")
+        else:
+            print("no")
+
+
 class Application(tornado.web.Application):
     def __init__(self):
         handlers = [
             (r'/', HomepageHandler),
             (r'/story', StoryHandler),
+            (r'/gallery', GalleryHandler),
             (r'/gallery_1', gallery_1),
             (r'/gallery_2', gallery_2),
             (r'/gallery_5', gallery_5),
             (r'/gallery_7', gallery_7),
-            (r'/gallery_9', gallery_9)
+            (r'/gallery_9', gallery_9),
+            (r'/signin', SigninHandler),
+            (r'/say', SayHandler)
         ]
         settings = {
             'template_path': 'templates',

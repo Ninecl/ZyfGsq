@@ -1,7 +1,8 @@
 body {
     background: rgb(61, 46, 46);
     overflow: hidden;
-    background-image: url("bg.jpg")
+    background-image: url("front.jpg");
+    background-size: cover;
   }
 .hi-slide { position: relative; width: 1200px; height: 800px; margin: 115px auto 0; }
 .hi-slide .hi-next, .hi-slide .hi-prev { position: absolute; top: 50%; width: 40px; height: 80px; margin-top: -40px; border-radius: 5px; line-height: 80px; text-align: center; cursor: pointer; background-color: #666; color: #fff; opacity: 0.7; transition: all 0.6s; font-size: 30px; }
