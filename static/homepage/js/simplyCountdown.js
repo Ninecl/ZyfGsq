@@ -151,6 +151,7 @@
             hours,
             minutes,
             seconds,
+            allhours,
             cd = document.querySelectorAll(elt);
 
         targetTmpDate = new Date(
@@ -189,15 +190,12 @@
                     nowUtc = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(),
                         now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
                     secondsLeft = (nowUtc.getTime() - targetDate) / 1000;
-                    console.log(nowUtc);
-                    console.log(targetDate);
-                    console.log(nowUtc.getTime() - targetDate.getTime());
-
                 } else {
                     secondsLeft = (nowUtc.getTime() - targetDate) / 1000;
                 }
 
                 if (secondsLeft > 0) {
+                    allhours = parseInt(secondsLeft / 3600, 10);
                     days = parseInt(secondsLeft / 86400, 10);
                     secondsLeft = secondsLeft % 86400;
 
@@ -259,6 +257,7 @@
 
                     fullCountDown.seconds.amount.textContent = (parameters.zeroPad && seconds.toString().length < 2 ? '0' : '') + seconds;
                     fullCountDown.seconds.word.textContent = secondWord;
+                    document.getElementById("Hours_Spend").setAttribute("data-to", allhours);
                 }
             };
 
